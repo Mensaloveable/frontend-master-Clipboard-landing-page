@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+.thick {
+  color: hsl(210, 10%, 33%);
+}
+
+.thick h1 {
+    font-weight: 800;
+}
+
+.soft {
+  color: hsl(201, 11%, 66%);
+}
+
+@media (min-width: 426px) {
+  body {
+    background: url("./images/bg-header-desktop.png") no-repeat center top fixed;
+    background-size: 100% auto;
+  }
+
+  .brand-logo {
+    background: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+
+  .history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+    margin: 30px;
+    padding: 0 280px;
+    text-align: center;
+  }
+
+  .first-step p {
+    letter-spacing: 1px;
+    margin: 15px 0;
+  }
+
+  .first-step button {
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin: 20px 5px;
+  }
+
+  .ios-download {
+    background: hsl(171, 66%, 44%);
+    box-shadow: 0 3px 5px 0 #55b8a7;
+  }
+
+  .mac-download {
+    background: hsl(233, 100%, 69%);
+    box-shadow: 0 3px 5px 0 #7c88e4;
+  }
+
+  .computer-image{
+    position: absolute;
+    height: 500px;
+    left: -75px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    background: url("./images/bg-header-mobile.png") no-repeat center top fixed;
+    background-size: 100% auto;
+    padding: 0 20px;
+  }
+
+  .brand-logo {
+    background: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    margin-bottom: 80px;
+  }
+
+  .history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+  }
+
+  .history > h1 {
+    padding: 0 16px 10px 16px;
+    line-height: 1.2;
+    letter-spacing: 1.9px;
+    font-weight: 800;
+  }
+
+  .first-step p {
+    max-width: 400px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+  }
+
+  .download {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .first-step button {
+    border: none;
+    display: flex;
+    margin-top: 25px;
+    border-radius: 30px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    color: white;
+    padding: 12px 0;
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .ios-download {
+    background: hsl(171, 66%, 44%);
+    box-shadow: 0 3px 5px 0 #55b8a7;
+  }
+
+  .mac-download {
+    background: hsl(233, 100%, 69%);
+    box-shadow: 0 3px 5px 0 #7c88e4;
+  }
+
+  .computer-image{
+    height: 250px;
+  }
+}
+
+.footer {
+  background: #f5f6f8;
+}
+
+.footer > ul {
+  max-height: inherit;
+  max-width: inherit;
+}
